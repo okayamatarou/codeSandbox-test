@@ -42,6 +42,21 @@
 
 //　コメント化　Ctrl-K　Ctrl-C
 
-const val5 = ["dog", "cat"];
-val5[0] = "dog2";
-console.log(val5);
+// const val5 = ["dog", "cat"];
+// val5[0] = "dog2";
+// val5.push("monkey");
+// console.log(val5);
+
+/**
+ * 19 テンプレート文字列
+ */
+const name = "name";
+const age = 28;
+
+// 従来法
+const message1 = "私の名前は " + name + "です " + "年齢は" + age;
+console.log(message1);
+
+// テンプレート文字列を用いる
+const message2 = `私の名前は${name}です。年齢は${age}です`;
+console.log(message2);
