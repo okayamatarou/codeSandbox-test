@@ -69,14 +69,39 @@
 // const func1 = function(str){return str}
 // console.log(func1("オウム返し"));
 
-// アロー関数
-const func2 = (str) => str;
+// // アロー関数
+// const func2 = (str) => str;
 
-console.log(func2("func2です"));
+// console.log(func2("func2です"));
 
-// アロー関数　2変数
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
+// // アロー関数　2変数
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
 
-console.log(func3(10, 20));
+// console.log(func3(10, 20));
+
+// 20 分割代入｛｝
+
+// const myProfile = {
+//   name: "okayama",
+//   age: 28
+// };
+
+// const message1 = `私の名前は${myProfile.name}です。年齢は${myProfile.age}です`;
+// console.log(message1);
+
+// // 分割代入
+// const { name, age } = myProfile;
+// const message2 = `私の名前は${name}です。年齢は${age}です`;
+// console.log(message2);
+
+const myProfile = ["okayama", 28];
+
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です`;
+console.log(message3);
+
+// 配列の分割代入
+const [name, age] = myProfile;
+const message4 = `名前は${name}です。年齢は${age}です`;
+console.log(message4);
